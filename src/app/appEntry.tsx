@@ -1,13 +1,17 @@
 import { createRoot } from 'react-dom/client'
 import React from 'react'
 
-import Routing from './appRouter'
 import './styles/globalStyles.scss'
+import { FluidCanvas } from '@/components/FluidCanvas'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
 
+export const App = () => {
+    return <FluidCanvas />
+}
+
 root.render(
     <React.StrictMode>
-        <Routing />
+        <App />
     </React.StrictMode>,
 )
