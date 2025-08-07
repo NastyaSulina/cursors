@@ -3,6 +3,7 @@ import React from 'react'
 
 import './styles/globalStyles.scss'
 import { FluidCanvas } from '@/components/FluidCanvas'
+// import { FluidCanvas as FluidCanvasWIP } from '@/wip'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
 

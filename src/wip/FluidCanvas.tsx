@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
 
-import styles from './Landing.module.scss'
+import styles from './FluidCanvas.module.scss'
 
-export const Landing = () => {
+export const FluidCanvas = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
 
     useEffect(() => {
