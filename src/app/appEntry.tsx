@@ -2,8 +2,7 @@ import { createRoot } from 'react-dom/client'
 import React from 'react'
 
 import './styles/globalStyles.scss'
-import { FluidCanvas } from '@/components/FluidCanvas'
-// import { FluidCanvas as FluidCanvasWIP } from '@/wip'
+import { FluidCanvas } from '@/fluid'
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
 
