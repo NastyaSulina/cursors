@@ -2,12 +2,11 @@ import * as THREE from 'three'
 
 export const CONFIG = {
     DOWNSAMPLE: 1,
-    VELOCITY_DISS: 0.998,
-    // Чем ниже коэффициент, тем быстрее след растворяется
-    DENSITY_DISS: 0.98,
-    PRESSURE_DISS: 0.95,
+    VELOCITY_DISS: 0.999,
+    DENSITY_DISS: 0.985,
+    PRESSURE_DISS: 0.97,
     PRESSURE_ITERATIONS: 30,
-    CURL_STRENGTH: 2,
+    CURL_STRENGTH: 3,
     SPLAT_RADIUS: 0.005,
     SPLAT_COLOR_SCALE: 0.5,
 
