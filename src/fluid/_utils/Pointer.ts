@@ -57,7 +57,7 @@ export class Pointer {
         if (now - this.lastColorTime > this.colorInterval) {
             this.hue = (this.hue + 0.618033988749895) % 1 // Золотое сечение
 
-            this.tmpColor.setHSL(this.hue, 0.9, 0.15)
+            this.tmpColor.setHSL(this.hue, 0.9, 0.4)
             this.color.set(this.tmpColor.r, this.tmpColor.g, this.tmpColor.b)
 
             this.lastColorTime = now

@@ -40,6 +40,8 @@ export const FluidCanvas = () => {
     const pressureSolveMaterial = useMemo(() => createPressureSolveMaterial(), [])
     const gradientMaterial = useMemo(() => createGradientMaterial(), [])
 
+    let lastT = performance.now()
+
     useEffect(() => {
         const canvas = canvasRef.current!
         const gl = new THREE.WebGLRenderer({
@@ -63,8 +65,6 @@ export const FluidCanvas = () => {
         )
 
         simulationScene.add(fullScreenQuad)
-
-        let lastT = performance.now()
 
         const initFramebuffers = () => {
             if (velocity) {
