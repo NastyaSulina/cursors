@@ -6,6 +6,9 @@ import type { Configuration } from 'webpack'
 
 const prodConfig: Configuration = merge(commonConfig as Configuration, {
     mode: 'production',
+    output: {
+        publicPath: '/fluid-cursor/',
+    },
     devtool: false,
     target: 'browserslist',
     optimization: {
